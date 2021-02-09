@@ -1,0 +1,444 @@
+Luke Newman, 12.3.2020   Assignment 7
+
+
+Initializing Buffers.
+Expected Values:
+10 510 size buffers, 0 254 size buffers, 0 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Requesting 700 word block.
+Expected: -2
+Actual:   -2
+
+Requesting 6 word block.
+Expected Values:
+9 510 size buffers, 1 254 size buffers, 1 126 size buffers, 1 62 size buffers, 1 30 size buffers, 1 14 size buffers, and 1 6 size buffers.
+
+Actual Assigned Address: 2
+
+Free Buffer Count:
+9 510 size buffers
+1 254 size buffers
+1 126 size buffers
+1 62 size buffers
+1 30 size buffers
+1 14 size buffers
+1 6 size buffers
+
+Status: OK
+
+Returning 6 word block.
+Expected Values:
+10 510 size buffers, 0 254 size buffers, 0 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Requesting Ten 510 word blocks.
+Expected Values: 0 free buffers
+
+Actual Assigned Address: 2
+Actual Assigned Address: 514
+Actual Assigned Address: 1026
+Actual Assigned Address: 1538
+Actual Assigned Address: 2050
+Actual Assigned Address: 2562
+Actual Assigned Address: 3074
+Actual Assigned Address: 3586
+Actual Assigned Address: 4098
+Actual Assigned Address: 4610
+
+Free Buffer Count:
+0 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Request an Additional Buffer of size 6.
+Expected Value: -1
+Actual Assigned Address: -1
+
+Free Buffer Count:
+0 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Returning all ten 510 word buffers.
+Expected Values:
+10 510 size buffers, 0 254 size buffers, 0 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Requesting Forty 126 word blocks.
+Expected Values: 0 free buffers
+
+Actual Assigned Address: 2
+Actual Assigned Address: 130
+Actual Assigned Address: 258
+Actual Assigned Address: 386
+Actual Assigned Address: 514
+Actual Assigned Address: 642
+Actual Assigned Address: 770
+Actual Assigned Address: 898
+Actual Assigned Address: 1026
+Actual Assigned Address: 1154
+Actual Assigned Address: 1282
+Actual Assigned Address: 1410
+Actual Assigned Address: 1538
+Actual Assigned Address: 1666
+Actual Assigned Address: 1794
+Actual Assigned Address: 1922
+Actual Assigned Address: 2050
+Actual Assigned Address: 2178
+Actual Assigned Address: 2306
+Actual Assigned Address: 2434
+Actual Assigned Address: 2562
+Actual Assigned Address: 2690
+Actual Assigned Address: 2818
+Actual Assigned Address: 2946
+Actual Assigned Address: 3074
+Actual Assigned Address: 3202
+Actual Assigned Address: 3330
+Actual Assigned Address: 3458
+Actual Assigned Address: 3586
+Actual Assigned Address: 3714
+Actual Assigned Address: 3842
+Actual Assigned Address: 3970
+Actual Assigned Address: 4098
+Actual Assigned Address: 4226
+Actual Assigned Address: 4354
+Actual Assigned Address: 4482
+Actual Assigned Address: 4610
+Actual Assigned Address: 4738
+Actual Assigned Address: 4866
+Actual Assigned Address: 4994
+
+Free Buffer Count:
+0 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Request an Additional Buffer of size 6.
+Expected Value: -1
+Actual Assigned Address: -1
+
+Free Buffer Count:
+0 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+
+Status: Tight
+
+Returning 126 sized buffers with addresses 2050 and 2434.
+Expected Values:
+0 510 size buffers, 0 254 size buffers, 2 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+0 510 size buffers
+0 254 size buffers
+2 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Returning 126 sized buffers with addresses 2178 and 2306.
+Expected Values:
+1 510 size buffers, 0 254 size buffers, 0 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+1 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Returning the rest of the 126 sized buffers.
+Expected Values:
+10 510 size buffers, 0 254 size buffers, 0 126 size buffers, 0 62 size buffers, 0 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Requesting 1 510, 3 254, 5 126, 8 62, 5 30, 10 14, and 12 6 sized buffers.
+
+Expected Values:
+4 510 size buffers, 0 254 size buffers, 1 126 size buffers, 1 62 size buffers, 1 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Actual Assigned Address for 510: 2
+Actual Assigned Address for 254: 514
+Actual Assigned Address for 254: 770
+Actual Assigned Address for 254: 1026
+Actual Assigned Address for 126: 1282
+Actual Assigned Address for 126: 1410
+Actual Assigned Address for 126: 1538
+Actual Assigned Address for 126: 1666
+Actual Assigned Address for 126: 1794
+Actual Assigned Address for 62: 1922
+Actual Assigned Address for 62: 1986
+Actual Assigned Address for 62: 2050
+Actual Assigned Address for 62: 2114
+Actual Assigned Address for 62: 2178
+Actual Assigned Address for 62: 2242
+Actual Assigned Address for 62: 2306
+Actual Assigned Address for 62: 2370
+Actual Assigned Address for 30: 2434
+Actual Assigned Address for 30: 2466
+Actual Assigned Address for 30: 2498
+Actual Assigned Address for 30: 2530
+Actual Assigned Address for 30: 2562
+Actual Assigned Address for 14: 2594
+Actual Assigned Address for 14: 2610
+Actual Assigned Address for 14: 2626
+Actual Assigned Address for 14: 2642
+Actual Assigned Address for 14: 2658
+Actual Assigned Address for 14: 2674
+Actual Assigned Address for 14: 2690
+Actual Assigned Address for 14: 2706
+Actual Assigned Address for 14: 2722
+Actual Assigned Address for 14: 2738
+Actual Assigned Address for 6: 2754
+Actual Assigned Address for 6: 2762
+Actual Assigned Address for 6: 2770
+Actual Assigned Address for 6: 2778
+Actual Assigned Address for 6: 2786
+Actual Assigned Address for 6: 2794
+Actual Assigned Address for 6: 2802
+Actual Assigned Address for 6: 2810
+Actual Assigned Address for 6: 2818
+Actual Assigned Address for 6: 2826
+Actual Assigned Address for 6: 2834
+Actual Assigned Address for 6: 2842
+
+Free Buffer Count:
+4 510 size buffers
+0 254 size buffers
+1 126 size buffers
+1 62 size buffers
+1 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Requesting 3 more 512 sized buffers.
+Expected Values:
+1 510 size buffers, 0 254 size buffers, 1 126 size buffers, 1 62 size buffers, 1 30 size buffers, 0 14 size buffers, and 0 6 size buffers.
+
+Actual Assigned Address for 512: 3074
+Actual Assigned Address for 512: 3586
+Actual Assigned Address for 512: 4098
+
+Free Buffer Count:
+1 510 size buffers
+0 254 size buffers
+1 126 size buffers
+1 62 size buffers
+1 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Returning all buffers slowly to watch them recombine.
+Return all 6 sized buffers.
+Returning 6 sized buffer at address 2754.
+Returning 6 sized buffer at address 2762.
+Returning 6 sized buffer at address 2770.
+Returning 6 sized buffer at address 2778.
+Returning 6 sized buffer at address 2786.
+Returning 6 sized buffer at address 2794.
+Returning 6 sized buffer at address 2802.
+Returning 6 sized buffer at address 2810.
+Returning 6 sized buffer at address 2818.
+Returning 6 sized buffer at address 2826.
+Returning 6 sized buffer at address 2834.
+Returning 6 sized buffer at address 2842.
+
+Free Buffer Count:
+1 510 size buffers
+1 254 size buffers
+0 126 size buffers
+1 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Return all 14 sized buffers.
+Returning 14 sized buffer at address 2594.
+Returning 14 sized buffer at address 2610.
+Returning 14 sized buffer at address 2626.
+Returning 14 sized buffer at address 2642.
+Returning 14 sized buffer at address 2658.
+Returning 14 sized buffer at address 2674.
+Returning 14 sized buffer at address 2690.
+Returning 14 sized buffer at address 2706.
+Returning 14 sized buffer at address 2722.
+Returning 14 sized buffer at address 2738.
+
+Free Buffer Count:
+1 510 size buffers
+1 254 size buffers
+1 126 size buffers
+1 62 size buffers
+1 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: Tight
+
+Return all 30 sized buffers.
+Returning 30 sized buffer at address 2434.
+Returning 30 sized buffer at address 2466.
+Returning 30 sized buffer at address 2498.
+Returning 30 sized buffer at address 2530.
+Returning 30 sized buffer at address 2562.
+
+Free Buffer Count:
+2 510 size buffers
+0 254 size buffers
+1 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Return all 62 sized buffers.
+Returning 62 sized buffer at address 1922.
+Returning 62 sized buffer at address 1986.
+Returning 62 sized buffer at address 2050.
+Returning 62 sized buffer at address 2114.
+Returning 62 sized buffer at address 2178.
+Returning 62 sized buffer at address 2242.
+Returning 62 sized buffer at address 2306.
+Returning 62 sized buffer at address 2370.
+
+Free Buffer Count:
+3 510 size buffers
+0 254 size buffers
+1 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Return all 126 sized buffers.
+Returning 126 sized buffer at address 1282.
+Returning 126 sized buffer at address 1410.
+Returning 126 sized buffer at address 1538.
+Returning 126 sized buffer at address 1666.
+Returning 126 sized buffer at address 1794.
+
+Free Buffer Count:
+4 510 size buffers
+1 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Return all 254 sized buffers.
+Returning 254 sized buffer at address 514.
+Returning 254 sized buffer at address 770.
+Returning 254 sized buffer at address 1026.
+
+Free Buffer Count:
+6 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
+Return all 510 sized buffers.
+Returning 510 sized buffer at address 2.
+Returning 510 sized buffer at address 3074.
+Returning 510 sized buffer at address 3586.
+Returning 510 sized buffer at address 4098.
+
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+
+Status: OK
+
